@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kartu Nama - Si Non-Formal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #32343b 0%, #182947 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      width: 100%;
+      max-width: 380px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-header {
+      background: linear-gradient(135deg, #153385 0%, #5c30d6 100%);
+      height: 120px;
+      position: relative;
+    }
+
+    .foto-container {
+      width: 130px;
+      height: 130px;
+      margin: -65px auto 0;
+      position: relative;
+      border-radius: 50%;
+      border: 5px solid white;
+      overflow: hidden;
+      background: #eee;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .foto-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 20px 25px 30px;
+      text-align: center;
+    }
+
+    .nama {
+      font-size: 28px;
+      font-weight: 800;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .username {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .tagline {
+      background: #f8f9fa;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 15px;
+      color: #555;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .info-section {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .info-section h3 {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #999;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 15px;
+      color: #555;
+    }
+
+    .info-item span {
+      margin-left: 10px;
+    }
+
+    .hobi-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .tag {
+      background: #667eea;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .tag:nth-child(2) { background: #ff6b6b; }
+    .tag:nth-child(3) { background: #feca57; }
+    .tag:nth-child(4) { background: #48dbfb; }
+    .tag:nth-child(5) { background: #1dd1a1; }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 25px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+
+    .social {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .social:hover {
+      transform: translateY(-3px);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-header"></div>
+    
+    <div class="foto-container">
+      <!-- GANTI URL FOTO DIBAWAH INI -->
+      <img src="https://picsum.photos/200" alt="Foto Profil">
+    </div>
+    
+    <div class="card-body">
+      <h1 class="nama">Ahmad Rian</h1>
+      <p class="username">@rian_gweh</p>
+      
+      <div class="tagline">
+        "narsis?, of course not , just sharing my vibe"
+      </div>
+      
+      <div class="info-section">
+        <h3>Biodata Singkat</h3>
+        <div class="info-item">📅 <span>22 tahun</span></div>
+        <div class="info-item">📍 <span>Jakarta, Indonesia</span></div>
+        <div class="info-item">💼 <span>Mahasiswa / Freelancer</span></div>
+        <div class="info-item">📧 <span>rian@email.com</span></div>
+      </div>
+      
+      <div class="info-section">
+        <h3>hobbies</h3>
+        <div class="hobi-tags">
+          <span class="tag">🎮 Gaming</span>
+          <span class="tag">🎬 Nonton</span>
+          <span class="tag">😴 Tidur</span>
+          <span class="tag">☕ Kopi</span>
+        </div>
+      </div>
+      
+      <div class="social-links">
+        <a href="https://www.instagram.com/piptwo" class="social">IG</a>
+        <a href="#" class="social">🐦</a>
+        <a href="#" class="social">💼</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
